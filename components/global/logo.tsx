@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo = ({ url }) => {
+const Logo = ({ url }: { url: string }) => {
   return <img src={url} className='w-[140px] h-[47px]' alt='logo' />;
 };
 

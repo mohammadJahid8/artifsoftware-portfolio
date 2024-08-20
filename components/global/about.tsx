@@ -68,7 +68,7 @@ const About = () => {
             <div>
               <SectionTitle title='Our Awards' isIcon={false} />
               <h4 className={cn(lora.className, 'text-xl font-medium')}>
-                Best Personnel Service Provider 2022" in Switzerland.
+                Best Personnel Service Provider 2022 in Switzerland.
               </h4>
               <p className='uppercase text-[#a8a4a5] text-sm mt-2 font-semibold'>
                 by Staffing Industry Analysts (SIA).
