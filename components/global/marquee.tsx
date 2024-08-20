@@ -16,7 +16,7 @@ const Marquee = () => {
           </Link>
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
-          <div className='green-line mr-8' />
+          <div className='w-[50px] h-[1px] bg-primary mr-8' />
           Business Development Manager, San Fransisco, CA.{' '}
           <Link
             href='#'
@@ -26,7 +26,7 @@ const Marquee = () => {
           </Link>
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
-          <div className='green-line mr-8' />
+          <div className='w-[50px] h-[1px] bg-primary mr-8' />
           Business Development Manager, San Fransisco, CA.{' '}
           <Link
             href='#'
@@ -36,7 +36,7 @@ const Marquee = () => {
           </Link>
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
-          <div className='green-line mr-8' />
+          <div className='w-[50px] h-[1px] bg-primary mr-8' />
           Business Development Manager, San Fransisco, CA.{' '}
           <Link
             href='#'
@@ -46,7 +46,7 @@ const Marquee = () => {
           </Link>
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
-          <div className='green-line mr-8' />
+          <div className='w-[50px] h-[1px] bg-primary mr-8' />
           Business Development Manager, San Fransisco, CA.{' '}
           <Link
             href='#'
@@ -56,7 +56,7 @@ const Marquee = () => {
           </Link>
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
-          <div className='green-line mr-8' />
+          <div className='w-[50px] h-[1px] bg-primary mr-8' />
           Business Development Manager, San Fransisco, CA.{' '}
           <Link href='#' className='text-white font-semibold'>
             EXPLORE MORE
