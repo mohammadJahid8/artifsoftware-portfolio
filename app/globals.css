@@ -83,7 +83,6 @@
   }
 }
 
-/* Green line styling */
 .green-line {
   width: 50px;
   height: 1px;
@@ -125,4 +124,31 @@
   100% {
     left: 125%;
   }
+}
+
+.choose-bg::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 10px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #dde6e3;
+  margin: 0 auto;
+  z-index: -1;
+}
+.choose-bg::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  right: 0px;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #dde6e3;
+  margin: 0 auto;
+  z-index: -1;
 }
