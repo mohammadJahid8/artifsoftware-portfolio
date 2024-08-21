@@ -1,6 +1,7 @@
 import About from '@/components/global/about';
 import Banner from '@/components/global/banner';
 import Marquee from '@/components/global/marquee';
+import Projects from '@/components/global/projects';
 import React from 'react';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <Marquee />
       <About />
+      <Projects />
     </div>
   );
 };
