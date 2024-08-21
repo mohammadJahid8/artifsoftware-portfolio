@@ -11,12 +11,14 @@ const config = {
   prefix: '',
   theme: {
     screens: {
-      '2xl': '1400px',
-      '2lg': '1200px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
+      '2lg': '1200px',
       xl: '1280px',
+      '2xl': '1400px',
+      '3xl': '1600px',
+      '4xl': '1800px',
     },
     container: {
       center: true,

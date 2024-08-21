@@ -14,8 +14,8 @@ import Features from './features';
 
 const ChooseUs = () => {
   return (
-    <div className='bg-white px-4 xl:px-0 py-[60px] md:py-[120px]'>
-      <div className='min-h-screen max-w-[1200px] mx-auto'>
+    <div className='bg-white px-4 xl:px-0 py-[60px] md:pt-[120px] md:-mb-[190px]'>
+      <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Why Choose Us' />
           <Title
