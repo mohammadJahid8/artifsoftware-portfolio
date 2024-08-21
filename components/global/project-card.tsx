@@ -7,7 +7,7 @@ const lora = Lora({ subsets: ['latin'] });
 interface ProjectCard {
   title: string;
   description: string;
-  icon: string;
+  href: string;
   img: string;
 }
 
@@ -48,7 +48,8 @@ const ProjectCard = ({ project }: { project: ProjectCard }) => {
         </div>
         <div className='bg-white px-6 py-4'>
           <a
-            href='#'
+            href={project.href}
+            target='_blank'
             className='text-[#062a26] hover:text-primary font-medium text-sm flex items-center group'
           >
             EXPLORE MORE
