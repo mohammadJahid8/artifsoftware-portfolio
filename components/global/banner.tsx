@@ -8,7 +8,7 @@ const lora = Lora({ subsets: ['latin'] });
 const Banner = () => {
   return (
     <div
-      className='px-10 min-h-[50vh] h-auto md:h-[90vh]'
+      className='px-4 xl:px-0 min-h-[50vh] h-auto md:h-[90vh]'
       style={{
         position: 'relative',
         backgroundImage:

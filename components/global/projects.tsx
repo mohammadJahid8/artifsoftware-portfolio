@@ -6,127 +6,32 @@ import {
   CarouselDots,
   CarouselItem,
 } from '../ui/carousel';
+import { projectData } from '@/utils/constants';
+import SectionTitle from './sec-title';
+import Title from './title';
 
 const Projects = () => {
-  const projectData = [
-    {
-      title: 'Temporary Staffing',
-      description: 'The wise man therefore always holds in these matters to...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'briefcase',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Contract Staffing',
-      description: 'Right to find fault with a man chooses these matters...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'file-alt',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Project-Based Hiring',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: ' Hiring',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'New Hiring',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Test 1',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Test 2',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Test 3',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Test 4',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-    {
-      title: 'Test 5',
-      description:
-        'Occasionally circumstances occur in these matters to this by the...',
-      imgSrc:
-        'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/service-v1-1.jpg',
-      icon: 'laptop',
-      iconBg: '#EFF8F7',
-      iconColor: '#006D68',
-      iconArrowColor: '#00A99D',
-    },
-  ];
-
   return (
-    <div className='bg-accent'>
+    <div className='bg-accent px-4 xl:px-0 py-[60px] md:py-[120px]'>
       <div className='min-h-screen max-w-[1200px] mx-auto'>
-        this is project
+        <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
+          <SectionTitle title='Projects we have done' />
+          <Title
+            title='Innovative Solutions for Talents'
+            className='text-[32px] lg:text-[46px] leading-[1.3em]'
+          />
+          <p className='text-muted-foreground max-w-[405px] text-[17px]'>
+            Long established fact that a reader will be distracted by the
+            readable content of a page.
+          </p>
+        </div>
         <Carousel>
           <CarouselContent>
             {projectData.map((data, i) => (
-              <CarouselItem key={i} className='md:basis-1/2 lg:basis-1/3 mb-10'>
+              <CarouselItem
+                key={i}
+                className='sm:basis-1/2 lg:basis-1/3 mb-14 sm:mb-20'
+              >
                 <ProjectCard key={i} project={data} />
               </CarouselItem>
             ))}
