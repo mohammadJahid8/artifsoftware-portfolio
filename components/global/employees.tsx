@@ -1,19 +1,14 @@
 import React from 'react';
-import ProjectCard from './project-card';
 import {
   Carousel,
   CarouselButton,
   CarouselContent,
-  CarouselDots,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '../ui/carousel';
-import { employeeData, projectData } from '@/utils/constants';
+import { employeeData } from '@/utils/constants';
 import SectionTitle from './sec-title';
 import Title from './title';
 import EmployeeCard from './employee-card';
-import { ArrowRightIcon, ChevronRight } from 'lucide-react';
 
 const Employees = () => {
   return (

@@ -6,6 +6,7 @@ import Marquee from '@/components/global/marquee';
 import Onboard from '@/components/global/onboard';
 import Projects from '@/components/global/projects';
 import ServiceArea from '@/components/global/service-area';
+import Testimonials from '@/components/global/testimonials';
 import React from 'react';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Onboard />
       <Employees />
       <ServiceArea />
+      <Testimonials />
     </div>
   );
 };
