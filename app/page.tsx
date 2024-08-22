@@ -5,6 +5,7 @@ import Employees from '@/components/global/employees';
 import Marquee from '@/components/global/marquee';
 import Onboard from '@/components/global/onboard';
 import Projects from '@/components/global/projects';
+import ServiceArea from '@/components/global/service-area';
 import React from 'react';
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <ChooseUs />
       <Onboard />
       <Employees />
+      <ServiceArea />
     </div>
   );
 };

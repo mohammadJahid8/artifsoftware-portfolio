@@ -45,7 +45,7 @@ const Employees = () => {
           </CarouselContent>
         </Carousel>
 
-        <a
+        {/* <a
           href='#'
           target='_blank'
           className='text-[#062a26] hover:text-primary font-medium text-sm flex justify-center items-center group uppercase text-center'
@@ -53,7 +53,7 @@ const Employees = () => {
           See all Members
           <ChevronRight className='w-5 h-5 transition-all duration-500 ease-in-out group-hover:opacity-0' />
           <ArrowRightIcon className='w-5 h-5 opacity-0 transition-all duration-500 ease-in-out transform translate-x-[-10px] group-hover:translate-x-0 group-hover:opacity-100' />
-        </a>
+        </a> */}
       </div>
     </div>
   );
