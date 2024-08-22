@@ -35,3 +35,31 @@ export const projectData = [
     href: 'https://www.rastro.ai/',
   },
 ];
+export const employeeData = [
+  {
+    name: 'Riad Ahmed',
+    position: 'Founder',
+    img: 'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/team-v1-4.jpg',
+    href: 'https://reachout-1b7f6.web.app/',
+  },
+  {
+    name: 'Mohammad Jahid',
+    position: 'Developer',
+    img: '/jahid.png',
+  },
+  {
+    name: 'Abdur Rahman',
+    position: 'Developer',
+    img: 'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/team-v1-4.jpg',
+  },
+  {
+    name: 'New employee',
+    position: 'Developer',
+    img: 'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/team-v1-4.jpg',
+  },
+  {
+    name: 'New employee 202',
+    position: 'Developer',
+    img: 'https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/team-v1-4.jpg',
+  },
+];

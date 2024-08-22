@@ -4,7 +4,7 @@ import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -252,6 +252,55 @@ const CarouselNext = React.forwardRef<
 });
 CarouselNext.displayName = 'CarouselNext';
 
+const CarouselButton = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button> & { direction: 'prev' | 'next' }
+>(
+  (
+    { className, variant = 'outline', size = 'icon', direction, ...props },
+    ref
+  ) => {
+    const {
+      orientation,
+      scrollPrev,
+      canScrollPrev,
+      scrollNext,
+      canScrollNext,
+    } = useCarousel();
+
+    const isPrev = direction === 'prev';
+    const handleClick = isPrev ? scrollPrev : scrollNext;
+    const canScroll = isPrev ? canScrollPrev : canScrollNext;
+
+    return (
+      <Button
+        ref={ref}
+        variant={variant}
+        size={size}
+        className={cn(
+          'h-12 w-12 hover:bg-secondary hover:text-primary transition-all duration-500',
+
+          className
+        )}
+        disabled={!canScroll}
+        onClick={handleClick}
+        {...props}
+      >
+        {isPrev ? (
+          <ChevronLeft className='h-6 w-6' />
+        ) : (
+          <ChevronRight className='h-6 w-6' />
+        )}
+        <span className='sr-only'>
+          {isPrev ? 'Previous slide' : 'Next slide'}
+        </span>
+      </Button>
+    );
+  }
+);
+
+CarouselButton.displayName = 'CarouselButton';
+
 const CarouselDots: React.FC = () => {
   const { api } = useCarousel() as { api: any };
   const [selectedIndex, setSelectedIndex] = React.useState<number>(0);
@@ -313,4 +362,5 @@ export {
   CarouselPrevious,
   CarouselNext,
   CarouselDots,
+  CarouselButton,
 };
