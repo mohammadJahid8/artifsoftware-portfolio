@@ -4,6 +4,7 @@ import ChooseUs from '@/components/global/choose-us';
 import Employees from '@/components/global/employees';
 import Marquee from '@/components/global/marquee';
 import Onboard from '@/components/global/onboard';
+import Partners from '@/components/global/partners';
 import Projects from '@/components/global/projects';
 import ServiceArea from '@/components/global/service-area';
 import Testimonials from '@/components/global/testimonials';
@@ -21,6 +22,7 @@ const Home = () => {
       <Employees />
       <ServiceArea />
       <Testimonials />
+      <Partners />
     </div>
   );
 };

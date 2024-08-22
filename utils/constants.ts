@@ -155,3 +155,37 @@ export const testimonialData = [
     rating: 5,
   },
 ];
+export const partnersData = [
+  {
+    name: 'Circling',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/spotify.svg',
+  },
+  {
+    name: 'Identity',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/stripe.svg',
+  },
+  {
+    name: 'Optic',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/netflix.svg',
+  },
+  {
+    name: 'MediaPlay',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/fedex.svg',
+  },
+  {
+    name: 'Xfinity',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/twitch.svg',
+  },
+  {
+    name: 'Sysco',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/disney.svg',
+  },
+  {
+    name: 'Progress',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/intel.svg',
+  },
+  {
+    name: 'Laren',
+    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/tesla.svg',
+  },
+];
