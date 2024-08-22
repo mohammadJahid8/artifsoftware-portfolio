@@ -7,11 +7,24 @@ export const projectData = [
     href: 'https://reachout-1b7f6.web.app/',
   },
   {
+    title: 'Agrios',
+    description: 'Agrios is the largest global organic farm.',
+    img: '/agrios.png',
+    href: 'https://agrios-ten.vercel.app/',
+  },
+  {
     title: 'Overtimeam',
     description:
       'Overtime Athletic Management software is a comprehensive platform designed for athletic organizations, coaches, athletes, parents, and administrators.',
     img: '/ams.png',
     href: 'https://overtimeam.com/',
+  },
+  {
+    title: 'Hollow Log Studios',
+    description:
+      'Specializing In Commercial and Residential Murals, Watercolor Portraits, and Illustrations, with a fun fantasy or fairy tale twist!',
+    img: '/hollow.png',
+    href: 'https://www.hollowlogstudios.com/',
   },
 
   {
