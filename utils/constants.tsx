@@ -201,8 +201,8 @@ export const partnersData = [
     img: '/hlw.png',
   },
   {
-    name: 'Zoom',
-    img: '/xoom.png',
+    name: 'Stripe',
+    img: '/stripe.png',
   },
 ];
 
