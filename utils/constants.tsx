@@ -1,3 +1,5 @@
+import { BookUser, FileClock, NotebookPen, User } from 'lucide-react';
+
 export const projectData = [
   {
     title: 'Reachout.ai',
@@ -200,5 +202,41 @@ export const partnersData = [
   {
     name: 'Laren',
     img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/tesla.svg',
+  },
+];
+
+export const standardPackages = [
+  {
+    price: 6.8,
+    type: 'Temporary',
+    features: [
+      'Candidate Sourcing',
+      'Resume Management',
+      'Candidate Tracking',
+      'Integrations',
+    ],
+    icon: <FileClock className='text-white w-[45px] h-[45px] -mb-5' />,
+  },
+  {
+    price: 9.5,
+    type: 'Contract',
+    features: [
+      'Candidate Matching',
+      'Security Control',
+      'Portal Management',
+      'Assessments',
+    ],
+    icon: <NotebookPen className='text-white w-[45px] h-[45px] -mb-5' />,
+  },
+  {
+    price: 12,
+    type: 'Project Based',
+    features: [
+      'Candidate Sourcing',
+      'Resume Management',
+      'Candidate Tracking',
+      'Integrations',
+    ],
+    icon: <BookUser className='text-white w-[45px] h-[45px] -mb-5' />,
   },
 ];
