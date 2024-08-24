@@ -181,8 +181,8 @@ export const partnersData = [
     img: '/upwork.png',
   },
   {
-    name: 'Payoneer',
-    img: '/payoneer.png',
+    name: 'Nuj',
+    img: '/nuj.png',
   },
   {
     name: 'Rantir',
