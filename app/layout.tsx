@@ -9,6 +9,9 @@ const outfit = Outfit({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Artif software',
   description: 'Artif software',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default async function RootLayout({

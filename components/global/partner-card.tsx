@@ -11,7 +11,7 @@ const PartnerCard = ({ data }: { data: PartnerProps }) => {
       <img
         src={data.img}
         alt={data.name}
-        className='w-24 sm:w-28 h-full object-contain filter sepia-[0.1] grayscale transition duration-500 group-hover:filter-none'
+        className='w-24 sm:w-32 h-full object-contain filter sepia-[0.1] grayscale transition duration-500 group-hover:filter-none'
       />
     </Card>
   );

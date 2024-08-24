@@ -173,36 +173,36 @@ export const testimonialData = [
 
 export const partnersData = [
   {
-    name: 'Circling',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/spotify.svg',
+    name: 'Fiverr',
+    img: '/fiverr.png',
   },
   {
-    name: 'Identity',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/stripe.svg',
+    name: 'Upwork',
+    img: '/upwork.png',
   },
   {
-    name: 'Optic',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/netflix.svg',
+    name: 'Payoneer',
+    img: '/payoneer.png',
   },
   {
-    name: 'MediaPlay',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/fedex.svg',
+    name: 'Rantir',
+    img: '/rantir_logo.png',
   },
   {
-    name: 'Xfinity',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/twitch.svg',
+    name: 'Overtime',
+    img: '/overtime.png',
   },
   {
-    name: 'Sysco',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/disney.svg',
+    name: 'Thaiproperty',
+    img: '/thai.jpg',
   },
   {
-    name: 'Progress',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/intel.svg',
+    name: 'Hollow',
+    img: '/hlw.png',
   },
   {
-    name: 'Laren',
-    img: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/tesla.svg',
+    name: 'Zoom',
+    img: '/zoom.png',
   },
 ];
 
