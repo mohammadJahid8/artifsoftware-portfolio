@@ -10,14 +10,14 @@ export default function TopNav() {
         </div>
         <div className='flex items-center space-x-5'>
           <span className='text-[#a5b1ad]'>Your Next Hire Starts with Us</span>
-          <div className='flex items-center space-x-2'>
+          {/* <div className='flex items-center space-x-2'>
             <Vibrate className='text-green-500' />
             <span className='text-[#a5b1ad]'>(+41)-888.56.7890</span>
           </div>
           <div className='flex items-center space-x-2'>
             <Mail className='text-green-500' />
             <span className='text-[#a5b1ad]'>info@example.com</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

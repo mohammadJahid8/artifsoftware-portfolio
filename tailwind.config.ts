@@ -19,6 +19,7 @@ const config = {
       '2xl': '1400px',
       '3xl': '1600px',
       '4xl': '1800px',
+      nav: '900px',
     },
     container: {
       center: true,

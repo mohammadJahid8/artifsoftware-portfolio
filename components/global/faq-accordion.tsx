@@ -22,12 +22,12 @@ const FaqAccordion = () => {
             <AccordionTrigger
               className={cn(
                 lora.className,
-                'text-xl text-secondary border border-[#dde6e3] px-5 py-3.5 rounded-md'
+                'text-base sm:text-xl text-secondary border border-[#dde6e3] px-5 py-3 sm:py-3.5 rounded-md'
               )}
             >
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className='text-[17px] text-muted-foreground bg-accent p-5 rounded-md leading-[28px] mt-2'>
+            <AccordionContent className='text-[15px] sm:text-[17px] text-muted-foreground bg-accent p-5 rounded-md leading-[28px] mt-2'>
               {item.answer}
             </AccordionContent>
           </AccordionItem>

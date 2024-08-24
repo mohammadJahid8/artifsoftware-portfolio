@@ -29,14 +29,14 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center text-start gap-3 py-4 font-medium transition-all duration-500 [&[data-state=open]>button]:bg-primary [&[data-state=open]>button]:text-white [&[data-state=open]>button>svg]:rotate-45 [&[data-state=open]]:bg-secondary [&[data-state=open]]:text-white',
+        'flex flex-1 items-center text-start gap-3 py-4 font-medium transition-all duration-500 [&[data-state=open]>div]:bg-primary [&[data-state=open]>div]:text-white [&[data-state=open]>div>svg]:rotate-45 [&[data-state=open]]:bg-secondary [&[data-state=open]]:text-white',
         className
       )}
       {...props}
     >
-      <Button className='bg-[#f0f4f2] text-gray-400 w-[40px] h-[40px] p-1.5'>
+      <div className='bg-[#f0f4f2] text-gray-400 w-[40px] h-[40px] p-1.5 flex items-center justify-center rounded-sm'>
         <ArrowRight className='shrink-0 transition-transform duration-500 rounded-sm' />
-      </Button>
+      </div>
       {children}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>

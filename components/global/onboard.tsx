@@ -65,15 +65,15 @@ const Onboard = () => {
             >
               <MessageCircleQuestion className='w-7 h-7' />
             </Button>
-            <Button
+            {/* <Button
               size='icon'
               className='rounded-full bg-white text-muted-foreground border border-black hover:text-white w-[70px] h-[70px] -ml-[15px]'
             >
               <Mail className='w-7 h-7' />
-            </Button>
+            </Button> */}
           </div>
 
-          <div className='flex flex-col items-center md:items-start gap-2'>
+          {/* <div className='flex flex-col items-center md:items-start gap-2'>
             <SectionTitle title='Email Us' isIcon={false} />
 
             <a
@@ -82,7 +82,7 @@ const Onboard = () => {
             >
               info@example.com
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

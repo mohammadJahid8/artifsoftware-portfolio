@@ -273,3 +273,13 @@ export const faqItems = [
       'Absolutely! We can help with redesigning your existing website or making updates to improve its functionality, aesthetics, or performance.',
   },
 ];
+
+export const menuItems = [
+  { href: '#', label: 'Home' },
+  { href: '#', label: 'About' },
+  { href: '#', label: 'Our Team' },
+  { href: '#', label: 'Services' },
+  { href: '#', label: 'Pricing' },
+  { href: '#', label: 'Our Works' },
+  { href: '#', label: 'FAQs' },
+];

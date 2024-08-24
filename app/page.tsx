@@ -3,6 +3,7 @@ import Banner from '@/components/global/banner';
 import ChooseUs from '@/components/global/choose-us';
 import Employees from '@/components/global/employees';
 import Faqs from '@/components/global/faq';
+import Footer from '@/components/global/footer';
 import Marquee from '@/components/global/marquee';
 import Onboard from '@/components/global/onboard';
 import Partners from '@/components/global/partners';
@@ -27,6 +28,7 @@ const Home = () => {
       <Partners />
       <Pricing />
       <Faqs />
+      <Footer />
     </div>
   );
 };
