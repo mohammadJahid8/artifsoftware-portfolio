@@ -240,3 +240,36 @@ export const standardPackages = [
     icon: <BookUser className='text-white w-[45px] h-[45px] -mb-5' />,
   },
 ];
+
+export const faqItems = [
+  {
+    question: 'What services does your agency offer?',
+    answer:
+      'We offer a wide range of services including website design, custom web development, e-commerce solutions, CMS development, SEO optimization, and website maintenance.',
+  },
+  {
+    question: 'How much does a website cost?',
+    answer:
+      'The cost of a website varies depending on the complexity, features, and specific requirements. We offer customized quotes based on your needs.',
+  },
+  {
+    question: 'What is your web development process?',
+    answer:
+      'Our process includes requirement analysis, design, development, testing, and deployment. We work closely with clients at every stage to ensure the final product meets their expectations.',
+  },
+  {
+    question: 'How long does it take to build a website?',
+    answer:
+      'The timeline for building a website depends on the scope and complexity of the project. A typical website can take anywhere from 4 to 12 weeks to complete.',
+  },
+  {
+    question: 'Do you provide support?',
+    answer:
+      'Yes, we offer ongoing support and maintenance services to ensure your website remains up-to-date, secure, and functioning optimally.',
+  },
+  {
+    question: 'Can you help with website redesign or updates?',
+    answer:
+      'Absolutely! We can help with redesigning your existing website or making updates to improve its functionality, aesthetics, or performance.',
+  },
+];

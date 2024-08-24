@@ -2,6 +2,7 @@ import About from '@/components/global/about';
 import Banner from '@/components/global/banner';
 import ChooseUs from '@/components/global/choose-us';
 import Employees from '@/components/global/employees';
+import Faqs from '@/components/global/faq';
 import Marquee from '@/components/global/marquee';
 import Onboard from '@/components/global/onboard';
 import Partners from '@/components/global/partners';
@@ -25,6 +26,7 @@ const Home = () => {
       <Testimonials />
       <Partners />
       <Pricing />
+      <Faqs />
     </div>
   );
 };
