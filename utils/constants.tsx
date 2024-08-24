@@ -275,11 +275,11 @@ export const faqItems = [
 ];
 
 export const menuItems = [
-  { href: '#', label: 'Home' },
-  { href: '#', label: 'About' },
-  { href: '#', label: 'Our Team' },
-  { href: '#', label: 'Services' },
-  { href: '#', label: 'Pricing' },
-  { href: '#', label: 'Our Works' },
-  { href: '#', label: 'FAQs' },
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#team', label: 'Our Team' },
+  { href: '#services', label: 'Services' },
+  { href: '#pricing', label: 'Pricing' },
+  { href: '#works', label: 'Our Works' },
+  { href: '#faqs', label: 'FAQs' },
 ];

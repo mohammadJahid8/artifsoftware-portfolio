@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-
+'use client';
 import SectionTitle from './sec-title';
 import Title from './title';
 import { Button } from '../ui/button';
@@ -12,8 +11,14 @@ import { MessageCircleQuestion } from 'lucide-react';
 const lora = Lora({ subsets: ['latin'] });
 
 const Faqs = () => {
+  const email = 'info@gmail.com';
+
+  const handleEmail = () => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
-    <div className='px-4 xl:px-0 py-[60px] md:py-[120px]'>
+    <div id='faqs' className='px-4 xl:px-0 py-[60px] md:py-[120px]'>
       <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Faq’s' />
@@ -59,7 +64,10 @@ const Faqs = () => {
               <p className='mb-4 text-center text-[#a5b1ad]'>
                 Send your questions to our team, they'll help you.
               </p>
-              <Button className=' text-white hover:text-secondary px-4 py-2 rounded-lg hover:bg-white'>
+              <Button
+                onClick={handleEmail}
+                className=' text-white hover:text-secondary px-4 py-2 rounded-lg hover:bg-white'
+              >
                 Send Now
               </Button>
             </div>

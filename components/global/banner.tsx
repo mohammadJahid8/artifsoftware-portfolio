@@ -1,4 +1,5 @@
-import { cn } from '@/lib/utils';
+'use client';
+import { cn, scrollToSection } from '@/lib/utils';
 import { Lora } from 'next/font/google';
 import React from 'react';
 import { Button } from '../ui/button';
@@ -8,6 +9,7 @@ const lora = Lora({ subsets: ['latin'] });
 const Banner = () => {
   return (
     <div
+      id='home'
       className='px-4 xl:px-0 min-h-[50vh] h-auto'
       style={{
         position: 'relative',
@@ -41,6 +43,7 @@ const Banner = () => {
           chooses to enjoy.
         </h3>
         <Button
+          onClick={() => scrollToSection('about')}
           className='hover:bg-secondary transition-all duration-300'
           size='lg'
         >

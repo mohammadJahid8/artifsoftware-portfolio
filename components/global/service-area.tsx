@@ -11,6 +11,7 @@ const lora = Lora({ subsets: ['latin'] });
 const ServiceArea = () => {
   return (
     <div
+      id='services'
       className='px-4 xl:px-0 min-h-[50vh] h-auto'
       style={{
         position: 'relative',

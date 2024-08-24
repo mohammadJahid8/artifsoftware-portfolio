@@ -1,15 +1,17 @@
+'use client';
+
 import React from 'react';
 import SectionTitle from './sec-title';
 import Image from 'next/image';
 import Title from './title';
 import { Lora } from 'next/font/google';
-import { cn } from '@/lib/utils';
+import { cn, scrollToSection } from '@/lib/utils';
 import { Button } from '../ui/button';
 const lora = Lora({ subsets: ['latin'] });
 
 const About = () => {
   return (
-    <div className='max-w-[1200px] mx-auto my-24 px-4 xl:px-0'>
+    <div id='about' className='max-w-[1200px] mx-auto my-24 px-4 xl:px-0'>
       <div className='flex lg:flex-row flex-col items-start gap-16'>
         <div className='relative about-img flex-1 w-full mx-auto md:max-w-[500px] h-[700px] overflow-hidden group rounded-md '>
           <Image
@@ -81,6 +83,7 @@ const About = () => {
           </p>
 
           <Button
+            onClick={() => scrollToSection('why-us')}
             className='hover:bg-secondary transition-all duration-300 text-white'
             size='lg'
           >

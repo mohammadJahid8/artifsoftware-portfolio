@@ -19,11 +19,20 @@ import {
   PhoneIncoming,
 } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
+import { cn, scrollToSection } from '@/lib/utils';
 import Logo from './logo';
 import { menuItems } from '@/utils/constants';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const phoneNumber = '01633909408';
+
+  const handleCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <header
       className={cn(
@@ -34,7 +43,7 @@ export default function Navbar() {
         <Link href='#' className='flex mr-auto' prefetch={false}>
           <Logo url='https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/sticky-logo-1.png' />
         </Link>
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <Button variant='ghost' size='icon' className='nav:hidden'>
               <MenuIcon className='h-8 w-8 text-primary font-extrabold' />
@@ -49,14 +58,18 @@ export default function Navbar() {
             </SheetHeader>
             <div className='grid py-6'>
               {menuItems.map((item, i) => (
-                <Link
+                <Button
                   key={i}
-                  href={item.href}
+                  variant='special'
+                  size='special'
+                  onClick={() => {
+                    scrollToSection(item.href);
+                    setOpen(false);
+                  }}
                   className='flex w-full items-center text-[15px] font-medium h-[46px] text-white border-b border-white/15'
-                  prefetch={false}
                 >
                   {item.label}
-                </Link>
+                </Button>
               ))}
             </div>
 
@@ -95,18 +108,20 @@ export default function Navbar() {
 
         <nav className='ml-auto hidden nav:flex items-center gap-2 2lg:gap-6'>
           {menuItems.map((item, i) => (
-            <Link
+            <Button
               key={i}
-              href={item.href}
+              variant='special'
+              size='special'
+              onClick={() => scrollToSection(item.href)}
               className='group inline-flex h-9 w-max items-center justify-center rounded-md bg-white nav:px-2 2lg:px-4 py-2 nav:text-[16px] 2lg:text-lg font-medium transition-colors duration-300 hover:bg-gray-100 hover:text-primary focus:bg-gray-100 focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50'
-              prefetch={false}
             >
               {item.label}
-            </Link>
+            </Button>
           ))}
 
           <div className='xl:ml-8 flex gap-4'>
             <Button
+              onClick={handleCall}
               className='bg-primary w-[50px] h-[50px] flex items-center justify-center'
               size='icon'
             >

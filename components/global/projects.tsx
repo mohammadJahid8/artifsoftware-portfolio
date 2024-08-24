@@ -12,7 +12,7 @@ import Title from './title';
 
 const Projects = () => {
   return (
-    <div className='bg-accent px-4 xl:px-0 py-[60px] md:py-[120px]'>
+    <div id='works' className='bg-accent px-4 xl:px-0 py-[60px] md:py-[120px]'>
       <div className='max-w-[1200px] mx-auto'>
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Projects we have done' />

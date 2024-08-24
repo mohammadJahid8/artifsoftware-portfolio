@@ -1,5 +1,7 @@
+'use client';
+import { scrollToSection } from '@/lib/utils';
 import { menuItems } from '@/utils/constants';
-import Link from 'next/link';
+import { Button } from '../ui/button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,14 +18,15 @@ const Footer = () => {
         </span>
         <ul className='flex justify-center flex-wrap gap-4 md:gap-6 items-center mt-3 text-sm font-medium text-[#a5b1ad] sm:mt-0'>
           {menuItems.map((item, i) => (
-            <Link
+            <Button
               key={i}
-              href={item.href}
+              variant='special'
+              size='special'
+              onClick={() => scrollToSection(item.href)}
               className='hover:underline'
-              prefetch={false}
             >
               {item.label}
-            </Link>
+            </Button>
           ))}
         </ul>
       </div>

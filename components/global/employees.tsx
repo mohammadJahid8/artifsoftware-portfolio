@@ -12,7 +12,7 @@ import EmployeeCard from './employee-card';
 
 const Employees = () => {
   return (
-    <div className='px-4 xl:px-0 py-[60px] md:py-[120px]'>
+    <div id='team' className='px-4 xl:px-0 py-[60px] md:py-[120px]'>
       <div className='md:max-w-[1200px] mx-auto'>
         <Carousel>
           <div className='flex md:flex-row flex-col gap-8 md:gap-0 items-center md:items-end md:justify-between pb-12'>

@@ -1,6 +1,8 @@
+'use client';
+
 import { Lora } from 'next/font/google';
 import Title from './title';
-import { cn } from '@/lib/utils';
+import { cn, scrollToSection } from '@/lib/utils';
 import {
   ArrowRightIcon,
   ChevronRight,
@@ -49,13 +51,15 @@ const Onboard = () => {
           <div className='flex flex-col items-center md:items-start gap-2'>
             <SectionTitle title='Have question?' isIcon={false} />
 
-            <a
-              href='#'
-              className='text-white hover:text-primary font-medium text-[17px] inline-flex items-center'
+            <Button
+              onClick={() => scrollToSection('faqs')}
+              variant='special'
+              size='special'
+              className=' text-white hover:text-primary font-medium text-[17px] inline-flex items-center'
             >
               Explore our FAQ section
               <ChevronRight className='w-5 h-5 mt-1 transition-all duration-500 ease-in-out group-hover:opacity-0' />
-            </a>
+            </Button>
           </div>
 
           <div className='flex items-center'>
