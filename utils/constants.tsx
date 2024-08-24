@@ -202,7 +202,7 @@ export const partnersData = [
   },
   {
     name: 'Zoom',
-    img: '/zoom.png',
+    img: '/xoom.png',
   },
 ];
 
