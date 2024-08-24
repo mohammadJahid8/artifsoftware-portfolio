@@ -38,7 +38,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveDownRight className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Reduce Hiring Risks'
+                label='Comprehensive Support'
                 className=''
                 order='01'
               />
@@ -46,7 +46,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveRight className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Deeper Talent Pools'
+                label='Innovative Solutions'
                 className='flex-row-reverse'
                 order='03'
               />
@@ -54,7 +54,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveUpRight className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Employer Branding'
+                label='Strong Communication'
                 className=''
                 order='05'
               />
@@ -75,7 +75,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveDownLeft className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Increase Efficiencies'
+                label='Project Privacy and Data Security'
                 className='flex-row-reverse'
                 order='02'
               />
@@ -83,7 +83,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveLeft className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Onboarding Support'
+                label='Full Project Support'
                 className=''
                 order='04'
               />
@@ -91,7 +91,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveUpLeft className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Industry Knowledge'
+                label='Ongoing Maintenance'
                 className='flex-row-reverse'
                 order='06'
               />

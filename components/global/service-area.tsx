@@ -48,23 +48,41 @@ const ServiceArea = () => {
         <div className='flex md:flex-row flex-col gap-24 md:gap-0'>
           <div className='flex flex-1 flex-col gap-7 mt-12 border-r border-[#ffffff1a]'>
             <InfoCard
-              title='Accounting & Finance'
-              description='Attain Wellness Through Premier Healthcare Solutions.'
+              title='E-Commerce'
+              description='Custom online store solutions with integrated shopping carts and secure payment systems.'
               IconComponent={Code}
             />
             <InfoCard
-              title='Digital Marketing'
-              description='Opportunities in Dynamic Digital Marketing Roles.'
+              title='Healthcare'
+              description='Secure applications for patient management and telemedicine services.'
               IconComponent={Code}
             />
             <InfoCard
-              title='Health Care & Medical'
-              description='Healing lives, caring professions, changing futures.'
+              title='Finance & Banking'
+              description='Robust systems for secure transactions and real-time financial analysis.'
               IconComponent={Code}
             />
             <InfoCard
-              title='Information Technology'
-              description='Involve managing digital systems and networks.'
+              title='Education & E-Learning'
+              description='Interactive platforms for online courses and virtual classrooms.'
+              IconComponent={Code}
+              border={false}
+            />
+            <InfoCard
+              title='Management Systems'
+              description='Tailored solutions for streamlining business processes and enhancing operational efficiency.'
+              IconComponent={Code}
+              border={false}
+            />
+            <InfoCard
+              title='AI Development'
+              description='Advanced AI solutions including chatbots and machine learning models to drive innovation and automate tasks.'
+              IconComponent={Code}
+              border={false}
+            />
+            <InfoCard
+              title='Real Estate'
+              description='Innovative platforms for property management, listings, and client engagement to optimize real estate operations.'
               IconComponent={Code}
               border={false}
             />
@@ -81,10 +99,10 @@ const ServiceArea = () => {
               )}
             >
               <span className='text-base md:text-xl text-secondary font-medium leading-[30px]'>
-                Job Offered
+                Total Project
               </span>
               <Button className='bg-secondary md:w-[80px] md:h-[50px]'>
-                2593
+                120
               </Button>
             </div>
             <div
@@ -93,10 +111,10 @@ const ServiceArea = () => {
               )}
             >
               <span className='text-base md:text-xl text-secondary font-medium leading-[30px]'>
-                Industry Companies
+                Industry Projects
               </span>
               <Button className='bg-secondary md:w-[80px] md:h-[50px]'>
-                26
+                30
               </Button>
             </div>
             <div
@@ -105,10 +123,10 @@ const ServiceArea = () => {
               )}
             >
               <span className='text-base md:text-xl text-secondary font-medium leading-[30px]'>
-                Job Opening
+                Personal Projects
               </span>
               <Button className='bg-secondary md:w-[80px] md:h-[50px]'>
-                126
+                90
               </Button>
             </div>
             <Button
@@ -142,7 +160,7 @@ const InfoCard = ({
     <div
       className={cn(
         'flex sm:flex-row flex-col sm:items-center gap-4',
-        border && 'border-b border-[#ffffff1a] pb-7 lg:pr-24'
+        border && 'border-b border-[#ffffff1a] pb-7'
       )}
     >
       <Button
@@ -152,7 +170,7 @@ const InfoCard = ({
         <IconComponent className='w-[40px] h-[40px]' />
       </Button>
 
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-2 max-w-lg'>
         <h2 className={cn(lora.className, 'text-2xl text-white')}>{title}</h2>
         <p className='text-[#a5b1ad] text-[17px]'>{description}</p>
       </div>

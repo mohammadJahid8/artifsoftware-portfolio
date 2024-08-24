@@ -1,5 +1,4 @@
-import React from 'react';
-
+'use client';
 import { Lora, Outfit } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
@@ -7,18 +6,24 @@ import { ChevronRight } from 'lucide-react';
 const outfit = Outfit({ subsets: ['latin'] });
 const lora = Lora({ subsets: ['latin'] });
 type Package = {
-  price: number;
+  price: string;
   type: string;
   features: string[];
   icon: JSX.Element;
 };
 
 const PricingCard = ({ data }: { data: Package }) => {
+  const email = 'info@gmail.com';
+
+  const handleEmail = () => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <div className='group bg-white hover:bg-secondary transition-all duration-500 shadow-sm rounded-lg max-w-md w-full mx-auto h-full border border-gray-100'>
       <h2
         className={cn(
-          'text-[60px] font-semibold mb-2 flex items-center px-7 py-2 group-hover:text-white',
+          'text-[50px] font-semibold mb-2 flex items-center px-7 py-3 group-hover:text-white',
           lora.className
         )}
       >
@@ -51,7 +56,7 @@ const PricingCard = ({ data }: { data: Package }) => {
         </Button>
       </div>
 
-      <div className='px-7 py-8'>
+      <div className='px-7 py-8 relative'>
         <ul className='mb-6 text-muted-foreground group-hover:text-gray-400'>
           {data.features.map((feature, index) => (
             <li key={index} className='flex justify-between items-center mb-4 '>
@@ -60,15 +65,14 @@ const PricingCard = ({ data }: { data: Package }) => {
             </li>
           ))}
         </ul>
-        <a
-          href='#'
+        <Button
+          onClick={handleEmail}
+          variant='special'
+          size='special'
           className='font-semibold mb-8 inline-flex items-center gap-2 text-sm group-hover:text-primary'
         >
           EXPLORE MORE <ChevronRight className='w-5 h-5' />
-        </a>
-        <p className='font-semibold border-t border-gray-200 pt-4 group-hover:text-white'>
-          *Highlight Something Here
-        </p>
+        </Button>
       </div>
     </div>
   );

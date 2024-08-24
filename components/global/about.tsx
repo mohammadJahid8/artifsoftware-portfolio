@@ -11,7 +11,7 @@ const lora = Lora({ subsets: ['latin'] });
 
 const About = () => {
   return (
-    <div id='about' className='max-w-[1200px] mx-auto my-24 px-4 xl:px-0'>
+    <div id='about' className=' max-w-[1200px] mx-auto my-24 px-4 xl:px-0'>
       <div className='flex lg:flex-row flex-col items-start gap-16'>
         <div className='relative about-img flex-1 w-full mx-auto md:max-w-[500px] h-[700px] overflow-hidden group rounded-md '>
           <Image
@@ -26,11 +26,11 @@ const About = () => {
           />
         </div>
         <div className='flex-1'>
-          <SectionTitle title='About our agency' />
+          <SectionTitle title='About Us' />
 
           <Title
-            title='Business Elevators and Career Crafters'
-            className='text-[32px] lg:text-[46px]'
+            title='Our awards and success are well-recognized'
+            className='text-[32px] lg:text-[46px] leading-[50px]'
           />
 
           <div className='flex items-center mt-10 gap-2'>
@@ -44,18 +44,12 @@ const About = () => {
             )}
           >
             <span className='text-primary text-[36px] lg:text-[48px]'>
-              2014,
+              2020,
             </span>{' '}
             Provide staffing services.
           </p>
 
-          <p className='text-muted-foreground py-6 text-[17px]'>
-            Our being able to do what we like best, every pleasure is to be
-            welcomed and every pain avoided but in certain circumstances and
-            owing to the claims of duty or the obligations.
-          </p>
-
-          <div className='flex items-start md:flex-row flex-col gap-7 md:items-center'>
+          <div className='flex items-start md:flex-row flex-col gap-7 md:items-center py-6'>
             <Image
               src='https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/about-style1_2.jpg'
               width='0'
@@ -70,16 +64,43 @@ const About = () => {
             <div>
               <SectionTitle title='Our Awards' isIcon={false} />
               <h4 className={cn(lora.className, 'text-xl font-medium')}>
-                Best Personnel Service Provider 2022 in Switzerland.
+                Clutch Top Web Development Agency
               </h4>
               <p className='uppercase text-[#a8a4a5] text-sm mt-2 font-semibold'>
-                by Staffing Industry Analysts (SIA).
+                Awarded for top-tier web development and client satisfaction.
               </p>
             </div>
           </div>
-          <p className='text-muted-foreground py-6 text-[17px]'>
-            Every pleasure is to be welcomedand every pain avoided but in
-            certain circumstances and owing to the claims of duty.
+          <div className='flex items-start md:flex-row flex-col-reverse gap-7 md:items-center py-3'>
+            <div>
+              <h4 className={cn(lora.className, 'text-xl font-medium')}>
+                Fiverr Top Rated Seller & Pro Badge
+              </h4>
+              <p className='text-muted-foreground text-[17px]'>
+                Recognized for consistently high-quality work and professional
+                service.
+              </p>
+            </div>
+
+            <Image
+              src='/award.jpg'
+              width='0'
+              height='0'
+              quality={100}
+              unoptimized
+              priority
+              alt='award'
+              className='w-[150px] h-full rounded-sm object-contain'
+            />
+          </div>
+          {/* <p className='text-muted-foreground text-[17px]'>
+            <strong>Fiverr Top Rated Seller & Pro Badge:</strong> Recognized for
+            consistently high-quality work and professional service.
+          </p> */}
+          <p className='text-muted-foreground py-3 text-[17px]'>
+            <strong>Upwork Level Seller:</strong> Noted for exceptional results
+            and a strong reputation. Clutch Top Web Development Agency: Awarded
+            for top-tier web development and client satisfaction.
           </p>
 
           <Button

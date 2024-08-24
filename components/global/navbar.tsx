@@ -41,7 +41,7 @@ export default function Navbar() {
     >
       <div className='w-full max-w-[1850px] mx-auto flex h-[90px] items-center px-4 nav:px-6'>
         <Link href='#' className='flex mr-auto' prefetch={false}>
-          <Logo url='https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/sticky-logo-1.png' />
+          <Logo url='/logo.jpg' />
         </Link>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
@@ -54,7 +54,7 @@ export default function Navbar() {
             className='max-w-[300px] bg-secondary border-none px-[15px]'
           >
             <SheetHeader className='mb-10'>
-              <Logo url='https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/mobile-nav-logo.png' />
+              <Logo url='/logo.png' />
             </SheetHeader>
             <div className='grid py-6'>
               {menuItems.map((item, i) => (
@@ -113,13 +113,13 @@ export default function Navbar() {
               variant='special'
               size='special'
               onClick={() => scrollToSection(item.href)}
-              className='group inline-flex h-9 w-max items-center justify-center rounded-md bg-white nav:px-2 2lg:px-4 py-2 nav:text-[16px] 2lg:text-lg font-medium transition-colors duration-300 hover:bg-gray-100 hover:text-primary focus:bg-gray-100 focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50'
+              className='group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-lg font-medium transition-colors duration-300 hover:bg-gray-100 hover:text-primary focus:bg-gray-100 focus:text-primary focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50'
             >
               {item.label}
             </Button>
           ))}
 
-          <div className='xl:ml-8 flex gap-4'>
+          {/* <div className='xl:ml-8 flex gap-4'>
             <Button
               onClick={handleCall}
               className='bg-primary w-[50px] h-[50px] flex items-center justify-center'
@@ -134,7 +134,7 @@ export default function Navbar() {
               </span>
               <span className='text-sm text-black font-bold'>CONSULT CALL</span>
             </p>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>

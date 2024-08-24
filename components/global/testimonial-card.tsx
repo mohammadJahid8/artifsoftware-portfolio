@@ -16,6 +16,14 @@ interface Testimonial {
 }
 
 const TestimonialCard = ({ data }: { data: Testimonial }) => {
+  const getInitials = (name: string) => {
+    const nameParts = name.split(' ');
+    const firstInitial = nameParts[0]?.charAt(0).toUpperCase() || '';
+    const lastInitial =
+      nameParts[nameParts.length - 1]?.charAt(0).toUpperCase() || '';
+    return `${firstInitial}${lastInitial}`;
+  };
+
   return (
     <Card
       className='w-full min-h-[300px] cursor-grab'
@@ -26,7 +34,7 @@ const TestimonialCard = ({ data }: { data: Testimonial }) => {
       <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-5'>
         <Avatar className='h-20 w-20'>
           <AvatarImage src={data.img} alt={data.name} />
-          <AvatarFallback>EJ</AvatarFallback>
+          <AvatarFallback>{getInitials(data.name)}</AvatarFallback>
         </Avatar>
         <Quote className='h-8 w-8 text-emerald-500' />
       </CardHeader>
@@ -48,10 +56,10 @@ const TestimonialCard = ({ data }: { data: Testimonial }) => {
         </Button>
         <div className='sm:text-right'>
           <p className={cn(lora.className, 'font-medium text-xl')}>
-            Eloise Juniper
+            {data.name}
           </p>
           <p className='text-sm text-muted-foreground font-medium pt-1'>
-            VICE PRESIDENT, DAILY NEWS
+            {data.position}
           </p>
         </div>
       </CardFooter>

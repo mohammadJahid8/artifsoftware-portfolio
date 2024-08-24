@@ -36,11 +36,11 @@ const Banner = () => {
             'text-[50px] md:text-[80px] text-white font-medium leading-[1.1em]'
           )}
         >
-          Finding solutions to your staffing problems
+          Transform Your Digital Presence with Expert Web Solutions
         </h1>
-        <h3 className='text-[17px] text-[#e2ece9] font-medium leading-[28px] max-w-[350px] pt-8 pb-4'>
-          Except to obtain some advantage from it who has find with a man who
-          chooses to enjoy.
+        <h3 className='text-[17px] text-[#e2ece9] font-medium leading-[28px] max-w-[500px] pt-8 pb-4'>
+          Artif software offers top-notch web design and development services,
+          including UI/UX design, advanced development, and AI solutions.
         </h3>
         <Button
           onClick={() => scrollToSection('about')}
