@@ -75,7 +75,7 @@ const ChooseUs = () => {
                 icon={
                   <MoveDownLeft className='text-primary hover:text-white w-5 h-5 md:w-7 md:h-7' />
                 }
-                label='Project Privacy and Data Security'
+                label='Project Privacy & Security'
                 className='flex-row-reverse'
                 order='02'
               />

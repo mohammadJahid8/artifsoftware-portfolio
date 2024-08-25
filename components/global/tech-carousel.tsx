@@ -9,22 +9,10 @@ import {
 } from '@/components/ui/carousel';
 import { useEffect, useState } from 'react';
 import { stacks } from '@/utils/constants';
+import { useMediaQuery } from '@/lib/useMediaQuery';
 
 export function TechCarousel() {
-  const [isLargeScreen, setIsLargeScreen] = useState(true);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 900px)');
-
-    const handleResize = (e: any) => {
-      setIsLargeScreen(e.matches);
-    };
-
-    setIsLargeScreen(mediaQuery.matches);
-    mediaQuery.addEventListener('change', handleResize);
-
-    return () => mediaQuery.removeEventListener('change', handleResize);
-  }, []);
+  const isMobile = useMediaQuery('(max-width: 900px)');
 
   return (
     <div className='flex-1 w-full flex flex-col nav:flex-row pointer-events-none tech-carousels relative'>
@@ -34,7 +22,7 @@ export function TechCarousel() {
           loop: true,
         }}
         plugins={[AutoScroll({ speed: 1.5, direction: 'backward' })]}
-        orientation={isLargeScreen ? 'vertical' : 'horizontal'}
+        orientation={isMobile ? 'horizontal' : 'vertical'}
         className='w-full nav:max-w-xs'
       >
         <CarouselContent className='-mt-1 nav:h-[400px]'>
@@ -58,7 +46,7 @@ export function TechCarousel() {
           loop: true,
         }}
         plugins={[AutoScroll({ speed: 1.5, direction: 'forward' })]}
-        orientation={isLargeScreen ? 'vertical' : 'horizontal'}
+        orientation={isMobile ? 'horizontal' : 'vertical'}
         className='w-full nav:max-w-xs'
       >
         <CarouselContent className='-mt-1 nav:h-[400px]'>
@@ -76,29 +64,34 @@ export function TechCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <Carousel
-        opts={{
-          align: 'start',
-          loop: true,
-        }}
-        plugins={[AutoScroll({ speed: 1.5, direction: 'backward' })]}
-        orientation={isLargeScreen ? 'vertical' : 'horizontal'}
-        className='w-full nav:max-w-xs'
-      >
-        <CarouselContent className='-mt-1 nav:h-[400px]'>
-          {stacks.reverse().map((st, index) => (
-            <CarouselItem key={index} className='pt-1 basis-1/3 nav:basis-1/4'>
-              <div className='p-1'>
-                <Card>
-                  <CardContent className='flex items-center justify-center p-6'>
-                    <StackIcon name={st} className='w-10 h-10' />
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+      {!isMobile && (
+        <Carousel
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          plugins={[AutoScroll({ speed: 1.5, direction: 'backward' })]}
+          orientation={isMobile ? 'horizontal' : 'vertical'}
+          className='w-full nav:max-w-xs'
+        >
+          <CarouselContent className='-mt-1 nav:h-[400px]'>
+            {stacks.reverse().map((st, index) => (
+              <CarouselItem
+                key={index}
+                className='pt-1 basis-1/3 nav:basis-1/4'
+              >
+                <div className='p-1'>
+                  <Card>
+                    <CardContent className='flex items-center justify-center p-6'>
+                      <StackIcon name={st} className='w-10 h-10' />
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      )}
     </div>
   );
 }
