@@ -13,14 +13,14 @@ const About = () => {
       <div className='flex lg:flex-row flex-col items-start gap-16'>
         <div className='relative about-img flex-1 w-full mx-auto md:max-w-[500px] h-[700px] overflow-hidden group rounded-md '>
           <Image
-            src='https://wp1.themevibrant.com/newwp/hiringhub/wp-content/uploads/2024/04/welcome-style1-img-2.jpg'
+            src='/about-us.jpg'
             width='0'
             height='0'
             quality={100}
             unoptimized
             priority
             alt='about'
-            className='w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105 rounded-md'
+            className='w-full h-full object-contain transition-transform duration-500 ease-in-out transform group-hover:scale-105 rounded-md'
           />
         </div>
         <div className='flex-1'>
