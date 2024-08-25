@@ -22,12 +22,12 @@ const ChooseUs = () => {
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Why Choose Us' />
           <Title
-            title='Advantages of Working With Us'
+            title='Discover What Sets Us Apart'
             className='text-[32px] lg:text-[46px] leading-[1.3em]'
           />
           <p className='text-muted-foreground max-w-[405px] text-[17px]'>
-            Long established fact that a reader will be distracted by the
-            readable content of a page.
+            Choose us for our expertise, tailored solutions, and commitment to
+            delivering exceptional results.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { ArrowBigRight, ArrowRightIcon, ChevronRight } from 'lucide-react';
+import { ArrowRightIcon, ChevronRight } from 'lucide-react';
 import { Lora } from 'next/font/google';
 import Image from 'next/image';
 import React from 'react';

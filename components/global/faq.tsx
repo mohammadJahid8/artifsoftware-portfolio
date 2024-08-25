@@ -11,7 +11,7 @@ import { MessageCircleQuestion } from 'lucide-react';
 const lora = Lora({ subsets: ['latin'] });
 
 const Faqs = () => {
-  const email = 'info@gmail.com';
+  const email = 'contact.artifsoftware@gmail.com';
 
   const handleEmail = () => {
     window.location.href = `mailto:${email}`;
@@ -27,8 +27,7 @@ const Faqs = () => {
             className='text-[32px] lg:text-[46px] leading-[1.3em]'
           />
           <p className='text-muted-foreground max-w-[405px] text-[17px]'>
-            Long established fact that a reader will be distracted by the
-            readable content of a page.
+            Your Queries Answered, All in One Place
           </p>
         </div>
 

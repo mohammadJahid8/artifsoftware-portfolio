@@ -93,15 +93,16 @@ const About = () => {
               className='w-[150px] h-full rounded-sm object-contain'
             />
           </div>
-          {/* <p className='text-muted-foreground text-[17px]'>
-            <strong>Fiverr Top Rated Seller & Pro Badge:</strong> Recognized for
-            consistently high-quality work and professional service.
-          </p> */}
-          <p className='text-muted-foreground py-3 text-[17px]'>
-            <strong>Upwork Level Seller:</strong> Noted for exceptional results
-            and a strong reputation. Clutch Top Web Development Agency: Awarded
-            for top-tier web development and client satisfaction.
-          </p>
+          <div className='py-3'>
+            <h4 className={cn(lora.className, 'text-xl font-medium')}>
+              Upwork Level Seller
+            </h4>
+            <p className='text-muted-foreground text-[17px] '>
+              Noted for exceptional results and a strong reputation. Clutch Top
+              Web Development Agency: Awarded for top-tier web development and
+              client satisfaction.
+            </p>
+          </div>
 
           <Button
             onClick={() => scrollToSection('why-us')}

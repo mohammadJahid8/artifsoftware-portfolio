@@ -83,7 +83,7 @@ const Marquee = () => {
         </div>
         <div className='relative text-gray-200 text-sm flex items-center'>
           <div className='w-[50px] h-[1px] bg-primary mr-8' />
-          Secure Hosting & Support{' '}
+          Secure Hosting & Support.{' '}
           <Button
             onClick={() => scrollToSection('services')}
             variant='special'

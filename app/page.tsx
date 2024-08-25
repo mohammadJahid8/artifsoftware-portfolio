@@ -10,6 +10,7 @@ import Partners from '@/components/global/partners';
 import Pricing from '@/components/global/pricing';
 import Projects from '@/components/global/projects';
 import ServiceArea from '@/components/global/service-area';
+import Technologies from '@/components/global/technologies';
 import Testimonials from '@/components/global/testimonials';
 import React from 'react';
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Projects />
       <ChooseUs />
       <Onboard />
+      <Technologies />
       <Employees />
       <ServiceArea />
       <Testimonials />

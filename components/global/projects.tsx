@@ -17,12 +17,12 @@ const Projects = () => {
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Projects we have done' />
           <Title
-            title='Innovative Solutions for Talents'
+            title='Showcasing Innovative Solutions'
             className='text-[32px] lg:text-[46px] leading-[1.3em]'
           />
           <p className='text-muted-foreground max-w-[405px] text-[17px]'>
-            Long established fact that a reader will be distracted by the
-            readable content of a page.
+            Check out our work to see how we turn ideas into successful
+            outcomes.
           </p>
         </div>
         <Carousel>

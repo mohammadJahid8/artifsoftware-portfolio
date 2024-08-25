@@ -68,7 +68,6 @@
   }
 }
 
-/* Marquee animation */
 .marquee-content {
   display: flex;
   animation: marquee 25s linear infinite;
@@ -151,4 +150,62 @@
   border: 1px solid #dde6e3;
   margin: 0 auto;
   z-index: -1;
+}
+
+.tech-carousels::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.tech-carousels::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+@media (max-width: 768px) {
+  .tech-carousels::before {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .tech-carousels::after {
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 50px;
+    height: 100%;
+
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+  }
 }

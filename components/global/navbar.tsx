@@ -9,15 +9,7 @@ import {
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MenuIcon,
-  Phone,
-  PhoneIncoming,
-} from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MenuIcon } from 'lucide-react';
 
 import { cn, scrollToSection } from '@/lib/utils';
 import Logo from './logo';
@@ -27,12 +19,9 @@ import { useState } from 'react';
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const phoneNumber = '01633909408';
-
-  const handleCall = () => {
-    window.location.href = `tel:${phoneNumber}`;
+  const handleRedirect = (url: string) => {
+    window.open(url, '_blank');
   };
-
   return (
     <header
       className={cn(
@@ -91,15 +80,31 @@ export default function Navbar() {
                 </p> */}
 
                 <div className='flex gap-4 mt-4'>
-                  <Button size='icon' className='bg-[#1f403d] rounded-full'>
+                  <Button
+                    onClick={() =>
+                      handleRedirect(
+                        'https://www.facebook.com/profile.php?id=100092204199645'
+                      )
+                    }
+                    size='icon'
+                    className='bg-[#1f403d] rounded-full'
+                  >
                     <Facebook className='w-5 h-5' />
                   </Button>
-                  <Button size='icon' className='bg-[#1f403d] rounded-full'>
+                  <Button
+                    onClick={() =>
+                      handleRedirect(
+                        'https://www.linkedin.com/company/artifconnect/'
+                      )
+                    }
+                    size='icon'
+                    className='bg-[#1f403d] rounded-full'
+                  >
                     <Linkedin className='w-5 h-5' />
                   </Button>
-                  <Button size='icon' className='bg-[#1f403d] rounded-full'>
+                  {/* <Button size='icon' className='bg-[#1f403d] rounded-full'>
                     <Instagram className='w-5 h-5' />
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </SheetFooter>

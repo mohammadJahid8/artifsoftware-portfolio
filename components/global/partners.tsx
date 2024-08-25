@@ -1,7 +1,5 @@
 import React from 'react';
-import ProjectCard from './project-card';
-
-import { partnersData, projectData } from '@/utils/constants';
+import { partnersData } from '@/utils/constants';
 import SectionTitle from './sec-title';
 import Title from './title';
 import PartnerCard from './partner-card';
@@ -13,11 +11,11 @@ const Partners = () => {
         <div className='flex flex-col gap-2 justify-center items-center text-center pb-12'>
           <SectionTitle title='Partners' />
           <Title
-            title='Trusted Staffing Partnerships'
+            title='Collaborations & Partnerships'
             className='text-[32px] lg:text-[46px] leading-[1.3em]'
           />
           <p className='text-muted-foreground max-w-[405px] text-[17px]'>
-            Long established fact that a reader will be distracted by the.
+            Empowering Projects Together with Trusted Partners
           </p>
         </div>
 

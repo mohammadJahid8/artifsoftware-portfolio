@@ -40,8 +40,8 @@ const ServiceArea = () => {
             className='text-[32px] lg:text-[46px] text-white'
           />
           <p className='text-[#a5b1ad] text-[17px]'>
-            Effortlessly tap into skilled remote talent with our simplified
-            hiring.
+            Explore the range of solutions we offer to meet your needs and drive
+            success.
           </p>
         </div>
 

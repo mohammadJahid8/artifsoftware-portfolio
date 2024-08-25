@@ -21,7 +21,7 @@ const Testimonials = () => {
             <div className='flex flex-col gap-2 items-center md:justify-start md:items-start text-center '>
               <SectionTitle title='Testimonials' />
               <Title
-                title='Leading in Client Satisfaction'
+                title='What Our Satisfied Clients Say About Us'
                 className='text-[32px] lg:text-[46px] leading-[1.3em]'
               />
             </div>

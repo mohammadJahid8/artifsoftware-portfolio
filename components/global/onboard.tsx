@@ -4,11 +4,11 @@ import { Lora } from 'next/font/google';
 import Title from './title';
 import { cn, scrollToSection } from '@/lib/utils';
 import {
-  ArrowRightIcon,
   ChevronRight,
-  Mail,
+  HeartHandshake,
   MessageCircleQuestion,
-  SquareArrowOutUpRight,
+  RefreshCcw,
+  Zap,
 } from 'lucide-react';
 import SectionTitle from './sec-title';
 import { Button } from '../ui/button';
@@ -19,12 +19,12 @@ const Onboard = () => {
     <div className='bg-secondary px-4 xl:px-0 py-[60px] md:py-[120px] 2xl:max-w-[1800px]  md:mx-12 4xl:mx-auto md:rounded-md relative z-10'>
       <div className='flex flex-col gap-6 justify-center items-center text-center pb-12 '>
         <Title
-          title='Onboard Remote Staff Quickly'
+          title='Start Your Journey with Us'
           className='text-[32px] lg:text-[46px] leading-[1.3em] text-white'
         />
         <p className='text-[#a5b1ad] text-[17px]'>
-          Effortlessly tap into skilled remote talent with our simplified
-          hiring.
+          Begin your digital journey with seamless onboarding and expert
+          guidance.
         </p>
 
         <div
@@ -34,16 +34,18 @@ const Onboard = () => {
           )}
         >
           <div className='flex items-center gap-2'>
-            <SquareArrowOutUpRight className='text-primary w-6 h-6' />
-            <span className='text-xl text-white'>Contract / Temprory</span>
+            <HeartHandshake className='text-primary w-6 h-6' />
+            <span className='text-xl text-white'>
+              Personalized Consultation
+            </span>
           </div>
           <div className='flex items-center gap-2'>
-            <SquareArrowOutUpRight className='text-primary w-6 h-6' />
-            <span className='text-xl text-white'>Permanent Placement</span>
+            <Zap className='text-primary w-6 h-6' />
+            <span className='text-xl text-white'>Rapid Development</span>
           </div>
           <div className='flex items-center gap-2'>
-            <SquareArrowOutUpRight className='text-primary w-6 h-6' />
-            <span className='text-xl text-white'>Placement Permanent</span>
+            <RefreshCcw className='text-primary w-6 h-6' />
+            <span className='text-xl text-white'>Ongoing Support</span>
           </div>
         </div>
 
