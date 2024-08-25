@@ -1,8 +1,7 @@
-'use client';
-import { cn, scrollToSection } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { Lora } from 'next/font/google';
 import React from 'react';
-import { Button } from '../ui/button';
+import MoreBtn from './more-btn';
 
 const lora = Lora({ subsets: ['latin'] });
 
@@ -42,13 +41,7 @@ const Banner = () => {
           Artif software offers top-notch web design and development services,
           including UI/UX design, advanced development, and AI solutions.
         </h3>
-        <Button
-          onClick={() => scrollToSection('about')}
-          className='hover:bg-secondary transition-all duration-300'
-          size='lg'
-        >
-          READ MORE
-        </Button>
+        <MoreBtn to='about' label='READ MORE' />
       </div>
     </div>
   );

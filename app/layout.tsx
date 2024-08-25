@@ -7,10 +7,11 @@ import TopNav from '@/components/global/top-nav';
 const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Artif software',
-  description: 'Artif software',
-  icons: {
-    icon: '/logo.png',
+  title: 'Artif Software',
+  description:
+    'Artif software offers top-notch web design and development services, including UI/UX design, advanced development, and AI solutions.',
+  twitter: {
+    card: 'summary_large_image',
   },
 };
 

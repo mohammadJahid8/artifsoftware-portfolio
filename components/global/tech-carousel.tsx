@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { stacks } from '@/utils/constants';
 
 export function TechCarousel() {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 900);
+  const [isLargeScreen, setIsLargeScreen] = useState(true);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(min-width: 900px)');

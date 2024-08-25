@@ -1,12 +1,10 @@
-'use client';
-
 import React from 'react';
 import SectionTitle from './sec-title';
 import Image from 'next/image';
 import Title from './title';
 import { Lora } from 'next/font/google';
-import { cn, scrollToSection } from '@/lib/utils';
-import { Button } from '../ui/button';
+import { cn } from '@/lib/utils';
+import MoreBtn from './more-btn';
 const lora = Lora({ subsets: ['latin'] });
 
 const About = () => {
@@ -104,13 +102,7 @@ const About = () => {
             </p>
           </div>
 
-          <Button
-            onClick={() => scrollToSection('why-us')}
-            className='hover:bg-secondary transition-all duration-300 text-white'
-            size='lg'
-          >
-            MORE ABOUT US
-          </Button>
+          <MoreBtn to='why-us' label='MORE ABOUT US' />
         </div>
       </div>
     </div>
