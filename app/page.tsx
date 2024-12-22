@@ -24,7 +24,7 @@ const Home = () => {
       <ChooseUs />
       <Onboard />
       <Technologies />
-      <Employees />
+      {/* <Employees /> */}
       <ServiceArea />
       <Testimonials />
       <Partners />

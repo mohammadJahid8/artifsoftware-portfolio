@@ -35,11 +35,14 @@ const Banner = () => {
             'text-[50px] md:text-[80px] text-white font-medium leading-[1.1em]'
           )}
         >
-          Transform Your Digital Presence with Expert Web Solutions
+          Drasoft Innovating Through Design, Research, and Achievement for
+          Exceptional Software Solutions.
         </h1>
         <h3 className='text-[17px] text-[#e2ece9] font-medium leading-[28px] max-w-[500px] pt-8 pb-4'>
-          Artif software offers top-notch web design and development services,
-          including UI/UX design, advanced development, and AI solutions.
+          Drasoft offers custom web development, scalable SaaS solutions,
+          innovative mobile apps, and secure cloud systems, helping businesses
+          stay ahead with advanced, reliable, and growth-driven software
+          solutions.
         </h3>
         <MoreBtn to='about' label='READ MORE' />
       </div>

@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className='w-full max-w-[1850px] mx-auto flex h-[90px] items-center px-4 nav:px-6'>
         <Link href='#' className='flex mr-auto' prefetch={false}>
-          <Logo url='/logo.jpg' />
+          <Logo url='/drasoft.png' />
         </Link>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
@@ -43,7 +43,7 @@ export default function Navbar() {
             className='max-w-[300px] bg-secondary border-none px-[15px]'
           >
             <SheetHeader className='mb-10'>
-              <Logo url='/logo.png' />
+              <Logo url='/drasoft.png' />
             </SheetHeader>
             <div className='grid py-6'>
               {menuItems.map((item, i) => (

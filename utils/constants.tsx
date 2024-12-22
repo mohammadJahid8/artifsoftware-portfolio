@@ -2,17 +2,29 @@ import { BookUser, FileClock, NotebookPen, User } from 'lucide-react';
 
 export const projectData = [
   {
+    title: 'Horizzon',
+    description: 'Build Your Profile, Find Your Next Job',
+    img: '/horizzon.png',
+    href: 'https://horizon-next-seven.vercel.app/',
+  },
+  {
     title: 'Reachout.ai',
     description:
       "In today’s fast-paced recruiting world, standing out matters more than ever. At R3achout.AI, we understand the power of connection, where your emails are not just messages, they're the first step in building meaningful relationships. We empower recruiters like you to enhance your recruitment processes, get results, ensuring you stay one step ahead of the competition.",
     img: '/reachout.png',
     href: 'https://reachout-1b7f6.web.app/',
   },
+  // {
+  //   title: 'Agrios',
+  //   description: 'Agrios is the largest global organic farm.',
+  //   img: '/agrios.png',
+  //   href: 'https://agrios-ten.vercel.app/',
+  // },
   {
-    title: 'Agrios',
-    description: 'Agrios is the largest global organic farm.',
-    img: '/agrios.png',
-    href: 'https://agrios-ten.vercel.app/',
+    title: 'Shotclick',
+    description: 'Shotclick is a AI content writer.',
+    img: '/shotclick.png',
+    href: 'https://shotclick-ai.vercel.app/',
   },
   {
     title: 'Overtimeam',

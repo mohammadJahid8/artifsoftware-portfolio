@@ -3,7 +3,7 @@
 import { Rss } from 'lucide-react';
 
 export default function TopNav() {
-  const email = 'contact.artifsoftware@gmail.com';
+  const email = 'contact.drasoft@gmail.com';
 
   const handleEmail = () => {
     window.location.href = `mailto:${email}`;

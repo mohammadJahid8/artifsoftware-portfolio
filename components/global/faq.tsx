@@ -11,7 +11,7 @@ import { MessageCircleQuestion } from 'lucide-react';
 const lora = Lora({ subsets: ['latin'] });
 
 const Faqs = () => {
-  const email = 'contact.artifsoftware@gmail.com';
+  const email = 'contact.drasoft@gmail.com';
 
   const handleEmail = () => {
     window.location.href = `mailto:${email}`;

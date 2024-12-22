@@ -5,7 +5,7 @@ const Logo = ({ url }: { url: string }) => {
   return (
     <img
       src={url}
-      className='w-[140px] h-[60px] nav:w-[130px] nav:h-[47px] lg:w-[140px] lg:h-[60px]'
+      className='w-[140px] h-[30px] nav:w-full nav:h-[30px] lg:w-full lg:h-[40px]'
       alt='logo'
     />
   );

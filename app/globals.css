@@ -67,18 +67,20 @@
     @apply bg-background text-foreground;
   }
 }
-
 .marquee-content {
   display: flex;
   animation: marquee 25s linear infinite;
+  width: max-content; /* Ensures the content takes up only the necessary width */
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(
+      -50%
+    ); /* Adjust to half the width because content is duplicated */
   }
 }
 

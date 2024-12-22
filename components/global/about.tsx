@@ -93,7 +93,7 @@ const About = () => {
           </div>
           <div className='py-3'>
             <h4 className={cn(lora.className, 'text-xl font-medium')}>
-              Upwork Level Seller
+              Upwork Top Rated Seller
             </h4>
             <p className='text-muted-foreground text-[17px] '>
               Noted for exceptional results and a strong reputation. Clutch Top

@@ -13,7 +13,7 @@ type Package = {
 };
 
 const PricingCard = ({ data }: { data: Package }) => {
-  const email = 'contact.artifsoftware@gmail.com';
+  const email = 'contact.drasoft@gmail.com';
 
   const handleEmail = () => {
     window.location.href = `mailto:${email}`;
