@@ -295,7 +295,7 @@ export const faqItems = [
 export const menuItems = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
-  { href: '#team', label: 'Team' },
+  // { href: '#team', label: 'Team' },
   { href: '#services', label: 'Services' },
   { href: '#pricing', label: 'Pricing' },
   { href: '#works', label: 'Works' },
